@@ -1,0 +1,38 @@
+body{
+    margin: 0%; 
+    background-color: pink;     
+}
+h1{
+    color:  purple;
+    font-size: 50px;
+    font-weight: bold;
+}
+p{
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+img{
+    width: 500px;
+    height: 500px;
+    border: outset 10px skyblue;
+    
+}
+
+
+
+/* 
+1. background-color // 배경색 바꿈 o
+2. color // 글씨 색 바꿈 o
+3. font-size // 글씨 크기 변경 o
+4. border // 테두리 o
+5. display // 레이어아웃 설정
+6. margin // 레이어아웃, 요소 등의 바깥 여백 o
+7. font-weight // 글씨가 bold(볼드)로 하면 두꺼워짐 o
+8. width // 폭 o
+9. height // 높이 o
+10. text-align // left, center, right 등 있음, 글 정렬
+11. float // 왼쪽 오른쪽 배치 o
+12. padding // 레이어아웃, 요소 등의 안쪽 여백
+*/
