@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+#box{
+    width: 1200px;
+    height: 700px;
+    background-color: rgb(1, 77, 73);
+    margin: auto;
+    margin-top: 30px;
+}
+#inbox{
+    text-align: center;
+    padding-top: 200px;
+}
+
+#inbox img{
+    width: 100px;
+    height: 100px;
+}
+.img1{
+    float: left;
+}
+.img2{
+    float: right;
+}
+.img3{
+    position: relative;   
+}
+
+
+#sobox img{
+    margin-top: 40px;
+    margin-left: 400px;
+    width: 130px;
+    height: 130px;
+    border: solid 4px rgb(99, 155, 136);
+    border-radius: 50%;
+}
+.sogae1{
+    float: right;
+    margin-right: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.end{
+    text-align: center;
+}
