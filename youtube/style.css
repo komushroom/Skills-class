@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: Roboto;
+}
+*{
+    user-select: none;
+    box-sizing: border-box;
+}
+ul li{
+    list-style:none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.Text{
+    display: flex;
+    flex-direction: column;
+   
+}
+.Next {
+    display: flex;
+    flex-direction: column;
+}
+
+.Next img{
+    height: 100px;
+    width: 100px;
+}
+
+/* .tag{} */
+
+
+
+
+
+
+
+@media (min-width: 800px){
+    
+}
