@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css">
     <title>youtube</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+    src="https://kit.fontawesome.com/2d323a629b.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
+
+
     <!-- 헤더  -->
     <header>
         <div class="log"><img src="/img/youtube.png" alt="">
@@ -22,77 +32,101 @@
               </svg>
         </div>
     </header>
+
+    
+
+       
     <!-- 비디오  -->
     <section class="video">
-        <video height="250" width="100%" controls>
+        <video height="450" width="100%" controls>
             <source src="/video/y2mate.com - Important Piscifun Phantom Reel Update_360p.mp4" type="video/mp4">
         </video>
     </section>
 
 
-    <!-- 정보  -->
+    <!-- 제목 정보  -->
     <section id="info">
         <div class="Text">
             <div class="tag">
-                <ul>
-                    <li>#안녕하세요</li>
-                    <li>#안녕하세요</li>
-                    <li>#안녕하세요</li>
-                    <ul>
-                        <li>
-                            Hello, I'm going to do freshwater fishing.(안녕하세요 저는 민물낚시를 해보겠습니다.)
-                        </li>
-                    </ul>
+                <ul class="shap">
+                    <li>#송어낚시</li>
+                    <li>#민물낚시</li>
+                    <li>#할어버지 낚시</li>
                 </ul>
+                <ul>
+                    <li>
+                        안녕하세요 저는 낚시아재입니다. 오늘은 민물낚시를 해볼건데요 어떤 물고기가 잡히질기대가됩니다.<button class="caret"><img src="/img/caret down.png" alt=""></button>
+                        <br> 
+                        대박 민물장어가 잡아서 오늘 기력한번 보충해보도록하겠습니다. 구독과 좋아요 좀 해주십시요. <br>
+                        (Hello, I am a fisherman.)
+                    </li>
+                </ul>
+                
             </div>
-    
+            
+            <!-- 구독,좋아요 클릭 -->
             <div class="btn">
-                <ul>
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">좋아요</label>
-                      
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck2">싫어요</label>
-                      
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck3">공유</label>
-                      </div>
-
+                <ul class="box">
+                    <li>
+                        <button>
+                          <i class="active fas fa-thumbs-up"></i><span>1K</span>
+                        </button>
+                      </li>
+                      <li>
+                        <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                      </li>
+                      <li>
+                        <button><i class="fas fa-share"></i><span>Share</span></button>
+                      </li>
+                      <li>
+                        <button><i class="fas fa-plus"></i><span>Save</span></button>
+                      </li>
+                      <li>
+                        <button>
+                          <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+                        </button>
+                      </li>
                 </ul>
             </div>
+                <!-- /* channel 내용  */ -->
+                <div class="channel">
+                    <hr>
+                    <img src="/img/grandfather.png" alt="#">
+                    <span>낚시아재</span>
+                    <button class="subscribe"><span>SUBSCRIBE</span></button>
+                    <!-- <span>구독자수 2명</span> -->
+                    <hr>
+                </div>
         </div>
         
 
 
-        <div class="channel">
-            <hr>
-            <img style="width: 50px; height: 50px; border-radius: 10px;" src="/img/father.jpg" alt="">
-            <span>낚시아재</span>
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <label class="btn btn-outline-primary" for="btncheck1">구독</label>
-            <!-- <span>구독자수 2명</span> -->
-            <hr>
-        </div>
 
+        <!-- 영상 내용 -->
         <div class="Next">
-            <div>
-                <img src="/img/girl.jpg" alt="">
-                <span>안녕하세요 여러분 저는 초특급미녀입니다 오늘은 낚시를해볼게요 (화이팅)</span>
-            </div>
-            <div>
-                <img src="/img/girl.jpg" alt="">
-                <span>안녕하세요 여러분 저는 초특급미녀입니다 오늘은 낚시를해볼게요 (화이팅)</span>
-            </div>
-
-            <div>
-                <img src="/img/girl.jpg" alt="">
-                <span>안녕하세요 여러분 저는 초특급미녀입니다 오늘은 낚시를해볼게요 (화이팅)</span>
-            </div>
+            <ul class="next">
+                <li>
+                    <img src="/img/girl.jpg" alt="">
+                    <span>안녕하세요 여러분 저는 낚시하는 미녀입니다. <br>  오늘은 강가에서 송어를 잡아볼게요.많이잡아서 구독자이벤트로 드리겠습니다. 
+                    </span>
+                </li>
+                <li>
+                    <img src="/img/girl.jpg" alt="">
+                    <span>안녕하세요 여러분 저는 낚시하는 미녀입니다. <br>  오늘은 강가에서 송어를 잡아볼게요.많이잡아서 구독자이벤트로 드리겠습니다. 
+                    </span>
+                </li>
+                <li>
+                    <img src="/img/girl.jpg" alt="">
+                    <span>안녕하세요 여러분 저는 낚시하는 미녀입니다. <br>  오늘은 강가에서 송어를 잡아볼게요.많이잡아서 구독자이벤트로 드리겠습니다. 
+                    </span>
+                </li>
+            </ul>
+                
+            
 
     </section>
-
+    
+    <script src="main.js"></script>
 
 </body>
 </html>

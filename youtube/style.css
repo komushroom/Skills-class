@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: Roboto;
 }
+
 *{
     user-select: none;
     box-sizing: border-box;
@@ -9,19 +10,32 @@ body{
 ul li{
     list-style:none;
 }
-
+/* 헤더  */
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #000;
     color: #fff;
+    padding: 10px;
 }
 
-#info{
+.video{
+    position: sticky;
+    top: 0;
+}
+
+/* 제목 정보 */
+/* #info{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
+} */
+#info{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     /* justify-content: space-between; */
 }
 
@@ -30,24 +44,113 @@ header{
     flex-direction: column;
    
 }
+.shap li{
+    color: rgb(80, 80, 232);
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: row;   
+}
+
+.caret{
+    border: 0;
+    background-color:transparent;
+}   
+
+.caret img{
+    width: 10px;
+    height: 15px;
+}   
+
+
+/* 구독 좋아요 박스  */
+.box{
+    font-size: 16px;
+    display: inline-flex;
+    flex-direction: row;
+}
+.box li{
+    padding-left: 60px;
+}
+
+
+ /* channel 내용  */
+
+.channel  span{
+    padding-right: 65%;
+}
+.subscribe{
+    margin-bottom: 20px;
+}
+.channel  img{
+    width: 35px; 
+    height: 35px;   
+    border-radius: 50%;
+    margin-left: 30px;
+    
+}
+
+.channel  input {
+    padding-left: 150px;
+}
+
+
+
+/* <!-- 영상 내용 --> */
 .Next {
     display: flex;
     flex-direction: column;
+    right: 100px;
+}
+
+.next {
+    right: 100px;
+}
+
+.next li span{
+    font-size: 15px;
+    position: absolute;
+    padding-left: 10px;
 }
 
 .Next img{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 200px;
+    border-radius: 3px;
 }
 
-/* .tag{} */
 
 
 
 
+@media (max-width: 768px){
+    #info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
+    .box li{
+        padding-left: 25px;
+    }
 
+    .subscribe{
+        margin-left: 65%;
+    }
 
-@media (min-width: 800px){
+    /* .Next {
+        display: flex;
+        
+    } */
+
+    .next {
+        left: 10px;
+    }
+    .Next img{
+        height: 120px;
+        width: 200px;
+        border-radius: 3px;
+    }
+    
     
 }
