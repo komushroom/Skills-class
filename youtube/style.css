@@ -50,16 +50,43 @@ header{
     display: inline-flex;
     flex-direction: row;   
 }
+/* .title{
+    display: flex;
+    flex-direction: column;
+} */
 
-.caret{
+.moreBtn{
     border: 0;
-    background-color:transparent;
+    /* background-color:transparent; */
+
 }   
 
-.caret img{
-    width: 10px;
+.moreBtn img{
+    width: 12px;
     height: 15px;
 }   
+
+.info .Text .titleAndButton .moreBtn {
+    height: 100%;
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .info .Text .titleAndButton .moreBtn.clicked {
+    transform: rotate(180deg);
+  }
+
+.info .Text .titleAndButton .title {
+    font-size: var(--font-medium);
+    margin-right: var(--spacing);
+  }
+  
+  .info .Text .titleAndButton .title.clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
 
 
 /* 구독 좋아요 박스  */
@@ -69,24 +96,30 @@ header{
     flex-direction: row;
 }
 .box li{
-    padding-left: 60px;
+    padding-left: 70px;
 }
 
 
  /* channel 내용  */
 
-.channel  span{
-    padding-right: 65%;
-}
-.subscribe{
-    margin-bottom: 20px;
+
+.meta{
+    display: flex;
+    align-items: center;
+} 
+.meta button{
+    margin-left: 65%;
 }
 .channel  img{
-    width: 35px; 
-    height: 35px;   
+    width: 25px; 
+    height: 45px;   
     border-radius: 50%;
     margin-left: 30px;
-    
+}
+.sub{
+    font-size: 12px; 
+    color: #808080; 
+
 }
 
 .channel  input {
@@ -102,27 +135,25 @@ header{
     right: 100px;
 }
 
-.next {
-    right: 100px;
-}
 
 .next li span{
-    font-size: 15px;
+    font-size: 14px;
     position: absolute;
     padding-left: 10px;
 }
 
 .Next img{
-    height: 120px;
-    width: 200px;
-    border-radius: 3px;
+    
+    height: 200px;
+    width: 350px;
+    border-radius: 1px;
 }
 
 
 
 
 
-@media (max-width: 768px){
+@media (max-width: 808px){
     #info{
         display: flex;
         flex-direction: column;
@@ -131,25 +162,22 @@ header{
     }
 
     .box li{
-        padding-left: 25px;
+        padding-left: 60px;
     }
+    
 
-    .subscribe{
-        margin-left: 65%;
-    }
-
-    /* .Next {
+    .Next {
         display: flex;
         
-    } */
-
-    .next {
-        left: 10px;
     }
+    .next{
+        margin-right: auto;
+    }
+
     .Next img{
         height: 120px;
         width: 200px;
-        border-radius: 3px;
+        border-radius: 1px;
     }
     
     
