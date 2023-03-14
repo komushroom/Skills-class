@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>잠실소호사무실 VOF</title>
+    <title>잠실소호인실 VOF</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -24,9 +24,9 @@
         </div>
     </nav>
     <div class="logo"> 
-        <img src="http://vof.co.kr/image/logo_n.gif" alt="">  
+        <img src="img/logo_n.gif" alt="">  
         <div class="btn">
-            <button>비지니스센터</button>
+            <button style="background-color: #f97316;">비지니스센터</button>
             <button>전화영어&중국어</button>
             <button>광고대행</button>
             <button>상업뉴스</button>
@@ -36,45 +36,64 @@
     <div class="BUSIN">
         <div class="busin"></div>
     </div>
-    <section class="container" style="padding-top: 20px; padding-bottom: 20px;"> 
+    <section class="container" style="padding-top: 20px; padding-bottom: 20px; margin-bottom: -1px;"> 
         <div class="menu">
             <div class="sidenav">
-                <a href="">Home</a>
-                <input type="checkbox" class="" id="about">
-                <label for="about"><span>About VOF</span></label>
-                <ul class="dropdown-container">
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                </ul>
-                <input type="checkbox" class="" id="service">
-                <label for="service"><span>Service</span></label>
-                <ul class="dropdown-container">
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                </ul>
-                <input type="checkbox" class="" id="office">
-                <label for="office"><span>Office Preview</span></label>
-                <ul class="dropdown-container">
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                    <li><a href="#">사무실</a></li>
-                </ul>
+                <div>
+                    <a href="">Home</a>
+                    <hr class="hr-solid">
+                    <div class="active1">
+                        <input type="checkbox" class="" id="about">
+                        <label for="about"><a>About VOF</a>
+                        <!-- <div class="cropped"><img src="img/ico_sub.gif" alt=""></div> -->
+                        </label>
+                        <ul class="dropdown-container1">
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">위치안내</a></li>
+                        </ul>
+
+                    </div>
+                    <hr class="hr-solid">
+                    <div  class="active2">
+                        <input type="checkbox" class="" id="service">
+                        <label for="service"><a>Service</a></label>
+                        <ul class="dropdown-container2">
+                            <li><a href="#">사무실</a></li>
+                            <li><a href="#">비상주서비스</a></li>
+                            <li><a href="#">전문비서</a></li>
+                            <li><a href="#">광고대행</a></li>
+                            <li><a href="#">회의실</a></li>
+                            <li><a href="#">세무/법무</a></li>
+                        </ul>
+                        
+                    </div>
+                    <hr class="hr-solid">
+                    <div class="active3">
+                        <input type="checkbox" class="" id="office">
+                        <label for="office"><a>Office Preview</a></label>
+                        <ul class="dropdown-container3">
+                            <li><a href="#">1인실</a></li>
+                            <li><a href="#">2인실</a></li>
+                            <li><a href="#">3인실</a></li>
+                            <li><a href="#">6인실</a></li>
+                            <li><a href="#">복도</a></li>
+                            <li><a href="#">카페</a></li>
+                            <li><a href="#">회의실</a></li>
+                            <li><a href="#">리셉션</a></li>
+                            <li><a href="#">창고</a></li>
+                        </ul>
+                    </div> 
+                    <hr class="hr-solid">
+                </div>
+                
                 <a href="">FAQ</a>
             </div>
-
+           
             <div class="Customer">
                 <div class="cus"> 
                     
                     <div class="gwi"> 
-                        <img src="http://vof.co.kr/image/mi_ctimg.gif" alt="">
+                        <img src="img/mi_ctimg.gif" alt="">
                         <div>
                             <h4>고객센터</h4>
                             <span>09:00 ~ 18:00 <br>주말/공휴일 휴무</span>
@@ -84,7 +103,7 @@
                     <select name="inq" id="bsi"><option value="">비지니스 센터 문의</option></select> 
                     <input type="text">
                     <input type="text">
-                    <div>
+                    <div class="number">
                         <input type=text name=-b size=3 maxlength=3>-<input type=text name=-b size=4 maxlength=4>-<input type=text name=-b size=4 maxlength=4>
                     </div>
                    
@@ -99,95 +118,103 @@
         <div class="visual">
                 <div class="slide">
 
-                    <div class="ddd">
-                        <img class="soho" src="http://vof.co.kr/image/mi_visual.jpg" alt="#">
+                    <div class="main">
+                        <img class="soho" src="img/mi_visual.jpg" alt="#">
                         
                         <div class="worker">
-                            <img class="vof" src="http://www.vof.co.kr/image/vof.png" alt="">
+                            <img class="vof" src="img/vof.png" alt="">
                             <div class="sos">
                                 <span>SOS! 싼값에 병드는 SOHO Worker</span>
                             </div>
+
+                            <!--  slide1 -->
                             <div style="display: grid; grid-template-columns: 1fr 1fr;">
+
                                 <div class="slider">
-                                    <input type="radio" name="slide" id="slide1" checked>
-                                    <input type="radio" name="slide" id="slide2">
-                                    <input type="radio" name="slide" id="slide3">
-                                    <input type="radio" name="slide" id="slide4">
+                                    
+                                    <input type="radio" name="slide1" id="slide01" checked>
+                                    <input type="radio" name="slide1" id="slide02">
+                                    <input type="radio" name="slide1" id="slide03">
+                                    <input type="radio" name="slide1" id="slide04">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li><img src="http://www.vof.co.kr/image/vof1_3.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof4_2.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof2_4.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof1_4.jpg"></li>
+                                        <li class="slideitem1"><img src="img/vof1_3.jpg"></li>
+                                        <li class="slideitem1"><img src="img/vof4_2.jpg"></li>
+                                        <li class="slideitem1"><img src="img/vof2_4.jpg"></li>
+                                        <li class="slideitem1"><img src="img/vof1_4.jpg"></li>
             
                                         <div class="bullets">
-                                            <label for="slide1"></label>
-                                            <label for="slide2"></label>
-                                            <label for="slide3"></label>
-                                            <label for="slide4"></label>
+                                            <label for="slide01"></label>
+                                            <label for="slide02"></label>
+                                            <label for="slide03"></label>
+                                            <label for="slide04"></label>
                                         </div>
-                                    </ul>4
+                                    </ul>
                                 </div>
-                                <div class="slider">
-                                    <input type="radio" name="slide" id="slide1" checked>
-                                    <input type="radio" name="slide" id="slide2">
-                                    <input type="radio" name="slide" id="slide3">
-                                    <input type="radio" name="slide" id="slide4">
+
+                                <!--  slide2 -->
+                                <div class="slider2">
+                                    <input type="radio" name="slide2" id="slide05" checked>
+                                    <input type="radio" name="slide2" id="slide06">
+                                    <input type="radio" name="slide2" id="slide07">
+                                    <input type="radio" name="slide2" id="slide08">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li><img src="http://www.vof.co.kr/image/vof1_3.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof4_2.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof2_4.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof1_4.jpg"></li>
-            
-                                        <div class="bullets sex">
-                                            <label for="slide1">&nbsp;</label>
-                                            <label for="slide2">&nbsp;</label>
-                                            <label for="slide3">&nbsp;</label>
-                                            <label for="slide4">&nbsp;</label>
+                                        <li class="slideitem2"><img src="img/vof1_3.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof4_2.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof2_4.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof1_4.jpg"></li>
+             
+                                        <div class="bullets lab">
+                                            <label for="slide05">&nbsp;</label>
+                                            <label for="slide06">&nbsp;</label>
+                                            <label for="slide07">&nbsp;</label>
+                                            <label for="slide08">&nbsp;</label>
                                         </div>
                                     </ul>
                                 </div>
                             </div>
-                        
+                            <!--  slide3 -->
                             <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                                <div class="slider">
-                                    <input type="radio" name="slide" id="slide1" checked>
-                                    <input type="radio" name="slide" id="slide2">
-                                    <input type="radio" name="slide" id="slide3">
-                                    <input type="radio" name="slide" id="slide4">
+                                <div class="slider3">
+                                    <input type="radio" name="slide3" id="slide09" checked>
+                                    <input type="radio" name="slide3" id="slide10">
+                                    <input type="radio" name="slide3" id="slide11">
+                                    <input type="radio" name="slide3" id="slide12">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li><img src="http://www.vof.co.kr/image/vof1_3.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof4_2.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof2_4.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof1_4.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof1_3.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof4_2.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof2_4.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof1_4.jpg"></li>
             
                                         <div class="bullets">
-                                            <label for="slide1">&nbsp;</label>
-                                            <label for="slide2">&nbsp;</label>
-                                            <label for="slide3">&nbsp;</label>
-                                            <label for="slide4">&nbsp;</label>
+                                            <label for="slide09">&nbsp;</label>
+                                            <label for="slide10">&nbsp;</label>
+                                            <label for="slide11">&nbsp;</label>
+                                            <label for="slide12">&nbsp;</label>
                                         </div>
                                     </ul>
                                 </div>
-                                <div class="slider">
-                                    <input type="radio" name="slide" id="slide1" checked>
-                                    <input type="radio" name="slide" id="slide2">
-                                    <input type="radio" name="slide" id="slide3">
-                                    <input type="radio" name="slide" id="slide4">
+
+                                <!--  slide4 -->
+                                <div class="slider4">
+                                    <input type="radio" name="slide4" id="slide13" checked>
+                                    <input type="radio" name="slide4" id="slide14">
+                                    <input type="radio" name="slide4" id="slide15">
+                                    <input type="radio" name="slide4" id="slide16">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li><img src="http://www.vof.co.kr/image/vof1_3.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof4_2.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof2_4.jpg"></li>
-                                        <li><img src="http://www.vof.co.kr/image/vof1_4.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof1_3.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof4_2.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof2_4.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof1_4.jpg"></li>
             
-                                        <div class="bullets sex">
-                                            <label for="slide1">&nbsp;</label>
-                                            <label for="slide2">&nbsp;</label>
-                                            <label for="slide3">&nbsp;</label>
-                                            <label for="slide4">&nbsp;</label>
+                                        <div class="bullets lab">
+                                            <label for="slide13">&nbsp;</label>
+                                            <label for="slide14">&nbsp;</label>
+                                            <label for="slide15">&nbsp;</label>
+                                            <label for="slide16">&nbsp;</label>
                                         </div>
                                     </ul>
                                 </div>
@@ -198,12 +225,15 @@
         
                             <div class="box">
                                 <div class="box-0">
-                                    <h4>회의실예약</h4>
-                                    <span>월 20시간까지 <br>회의실 예약이가능합니다</span> 
+                                    <img src="/img/m_quicknew01.gif" alt="">
+
+                                    <!-- <h4>회의실예약</h4>
+                                    <span>월 20시간까지 <br>회의실 예약이가능합니다</span>  -->
                                 </div>
                                 <div class="box-0">
-                                    <h4>오라인문의</h4>
-                                    <span>빠르고 성실하게<br>답변드리겠습니다.</span> 
+                                    <img src="/img/m_quicknew02.gif" alt="">
+                                    <!-- <h4>온라인문의</h4>
+                                    <span>빠르고 성실하게<br>답변드리겠습니다.</span>  -->
                                 </div>
                             </div>
                             
@@ -212,14 +242,14 @@
  
                     <div class="online">
                         <div onclick="location.href='http://vof.co.kr/online.htm'" class="box1">
-                            <img  src="http://vof.co.kr/image/mi_quick4.gif" alt="">
+                            <img  src="img/mi_quick4.gif" alt="">
                             <div class="txt">
                                 <h4>온라인문의</h4>
                                 <span>빠르고 성실하게<br>답변드리겠습니다.</span>  
                             </div>
                         </div>
                         <div onclick="location.href='http://vof.co.kr/online.htm'" class="box2">
-                            <img src="http://vof.co.kr/image/mi_quick5.gif" alt="">
+                            <img src="img/mi_quick5.gif" alt="">
                             <div class="txt">
                                 <h4>서비스가격</h4>
                                 <span>최저단가로 최고<br>서비스를 느끼세요.</span>  
@@ -227,15 +257,15 @@
                         </div>
 
                         <div onclick="location.href='http://vof.co.kr/OfficePreview.htm'" class="box3">
-                            <img src="http://vof.co.kr/image/mi_quick6.gif" alt="">
+                            <img src="img/mi_quick6.gif" alt="">
                             <div class="txt" >
                                 <h4>Office Preview</h4>
-                                <span>사무실을 자세히<br>보실수 있습니다.</span>   
+                                <span>인실을 자세히<br>보실수 있습니다.</span>   
                             </div>
                         </div>
 
                         <div onclick="location.href='http://vof.co.kr/02_service09.htm'" class="box4">
-                            <img src="http://vof.co.kr/image/mi_quick7.gif" alt="">
+                            <img src="img/mi_quick7.gif" alt="">
                             <div class="txt">
                                 <h4>부가서비스</h4>
                                 <span>다양한 혜택을<br>많이 드리겠습니다.</span>  
@@ -246,64 +276,145 @@
                     </div>
                 </div>
             <div>
-                
-
         </div>
-        
-
     </section>
+
     <section class="container1"> 
         <div class="menu2">
-            <div class="board">   
-                <h3>VOF 공지사항 <a href="#"><img class="plus" src="http://www.vof.co.kr/image/mi_more1.gif" alt=""></a> </h3>
-                <hr>
-                <li style="font-size: 10px;">창고서비스 오픈!!</li>
-                <hr>
-                <li style="font-size: 10px;">고객센터 운영시간 안내</li>
+            <div class="bord">
+                <div class="board">   
+                    <div style="border-bottom:1px dotted; " class="bod">
+                        <h4>VOF 공지사항 </h4>
+                        <a href="#"><img class="plus" src="img/mi_more1.gif" alt="#"></a>
+                    </div>
+                    <div style="border-bottom:1px dotted; padding:5px;  " class="icn ">
+                        <li >창고서비스 오픈!!</li>
+                        <img style="width: 10px ;height: 10px;"  src="/img/icn_new.gif" alt="">
+                    </div>
+                    <div class="icn">
+                        <li>고객센터 운영시간 안내</li>
+                        <img  src="/img/icn_new.gif" alt="">
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <div id="daumRoughmapContainer1678243325420" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                </div> 
+                
             </div>
-
-            <div class="map">
-                <div id="daumRoughmapContainer1678243325420" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-            </div>
-
+            
 
             <div>
-                <div class="tour">
-                    <h3>Office Tour</h3>
-                    <img src="http://vof.co.kr/image/arrow_left.gif" alt="">
-                    <img src="http://vof.co.kr/attch/office/1563808557_0.jpg" alt="">
-                    <img src="http://vof.co.kr/attch/office/1563764894_0.jpg" alt="">
-                    <img src="http://vof.co.kr/attch/office/1531539569_0.jpg" alt="">
-                    <img src="http://vof.co.kr/attch/office/1431337984_0.jpg" alt="">
-                    <img src="http://vof.co.kr/attch/office/1563764756_0.jpg" alt="">
-                    <img src="http://vof.co.kr/attch/office/1563808819_0.jpg" alt="">
-                    <img src="http://vof.co.kr/attch/office/1563808835_0.jpg" alt="">
-                    <img src="http://vof.co.kr/image/arrow_right.gif" alt="">
+
+
+                <div class="section">
+                    <div class="tour">
+                        <h3>Office Tour</h3>
+
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">   
+                        <input type="radio" name="slide" id="slide6">
+                        <input type="radio" name="slide" id="slide7">
+                    </div>
+                    <ul class="officeitem" style="white-space: nowrap;">
+                        <li class="officelist">
+                            <div>
+                                <label for="slide7"><img style="width:30px; height: 40px;" src="img/arrow_left.gif" alt=""></label>
+                                <a><img src="img/1563808557_0.jpg" alt=""></a>
+                                <a><img src="img/1563764894_0.jpg" alt=""></a>
+                                <a><img src="img/1531539569_0.jpg" alt=""></a>
+                                <a><img src="img/1563808835_0.jpg" alt=""></a>
+                                <a><img src="img/1563764756_0.jpg" alt=""></a>
+                                <a><img src="img/1563808819_0.jpg" alt=""></a>
+                                <a><img src="img/1431337963_0.jpg" alt=""></a>
+                                <label for="slide1"><img style="width:30px; height: 40px;"src="img/arrow_right.gif" alt=""></label>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+
+                
+
+                
+                        
+                        <!-- <li>
+                            <a>
+                                <img src="img/1563808557_0.jpg" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a>
+                                <img src="img/1563764894_0.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="img/1531539569_0.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="img/1563808835_0.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="img/1563764756_0.jpg" alt="">
+                            </a>
+                        </li>
+
+                        
+                        <li>
+                            <a>
+                                <img src="img/1563808819_0.jpg" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a>
+                                <img src="img/1431337963_0.jpg" alt="">
+                            </a>
+                        </li> -->
+
+                        
+
+<!-- 
+                        <label for="slide1"><img src="img/arrow_right.gif" alt=""></label> -->
+                    </ul>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="ball">
+            <a class="ball1">
+                <img src="img/chattingBut.png" alt="">
+            </a>
+        </div>
+    
+
+    </section>
+    <footer>
+        <div class="fot">1</div>
+
+        <div class="middle">
+            <div>
+                <img src="img/foot_logo.gif" alt="">
+            </div>
+    
+            <div>
+                <p class="inform">
+                    상호 : 주식회사 브이오에프 <span class="adr">|</span>  대표자 : 박동수<span class="adr">|</span>서울시 송파구 방이동 39-2 신동아타워 6층 <span class="adr">|</span> Tel : 02 - 418 – 0227 <span class="adr">|</span> Fax : 070 - 8282 - 6200 <span class="adr">|</span> E-mail : vof@vof.co.kr
+                    <br>사업자등록번호 : 211-88-65090 <span class="adr">|</span> 통신판매업신고 : 제 2015-서울송파-0861호
+                    <br><span style="line-height: 30px;">Copyright @2015 Vision of Family. All rights reserved.</span>
+                </p>
             </div>
         </div>
 
-
-
-        
-    
-    </section>
-
-    
-
-
-    <footer>
-        <div class="fot">1</div>
-        <div>
-            <img src="http://vof.co.kr/image/foot_logo.gif" alt="">
-        </div>
-        <div>
-            <p class="inform">
-                상호 : 주식회사 브이오에프| 대표자 : 박동수|서울시 송파구 방이동 39-2 신동아타워 6층 |Tel : 02 - 418 – 0227| Fax : 070 - 8282 - 6200 | E-mail : vof@vof.co.kr
-                사업자등록번호 : 211-88-65090 | 통신판매업신고 : 제 2015-서울송파-0861호
-                Copyright @2015 Vision of Family. All rights reserved.
-            </p>
-        </div>
     </footer>
 
 
