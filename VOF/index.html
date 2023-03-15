@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>잠실소호인실 VOF</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>  
     <nav>
@@ -39,55 +45,100 @@
     <section class="container" style="padding-top: 20px; padding-bottom: 20px; margin-bottom: -1px;"> 
         <div class="menu">
             <div class="sidenav">
-                <div>
-                    <a href="">Home</a>
-                    <hr class="hr-solid">
-                    <div class="active1">
-                        <input type="checkbox" class="" id="about">
-                        <label for="about"><a>About VOF</a>
-                        <!-- <div class="cropped"><img src="img/ico_sub.gif" alt=""></div> -->
-                        </label>
-                        <ul class="dropdown-container1">
-                            <li><a href="#">이용안내</a></li>
-                            <li><a href="#">위치안내</a></li>
-                        </ul>
-
-                    </div>
-                    <hr class="hr-solid">
-                    <div  class="active2">
-                        <input type="checkbox" class="" id="service">
-                        <label for="service"><a>Service</a></label>
-                        <ul class="dropdown-container2">
-                            <li><a href="#">사무실</a></li>
-                            <li><a href="#">비상주서비스</a></li>
-                            <li><a href="#">전문비서</a></li>
-                            <li><a href="#">광고대행</a></li>
-                            <li><a href="#">회의실</a></li>
-                            <li><a href="#">세무/법무</a></li>
-                        </ul>
-                        
-                    </div>
-                    <hr class="hr-solid">
-                    <div class="active3">
-                        <input type="checkbox" class="" id="office">
-                        <label for="office"><a>Office Preview</a></label>
-                        <ul class="dropdown-container3">
-                            <li><a href="#">1인실</a></li>
-                            <li><a href="#">2인실</a></li>
-                            <li><a href="#">3인실</a></li>
-                            <li><a href="#">6인실</a></li>
-                            <li><a href="#">복도</a></li>
-                            <li><a href="#">카페</a></li>
-                            <li><a href="#">회의실</a></li>
-                            <li><a href="#">리셉션</a></li>
-                            <li><a href="#">창고</a></li>
-                        </ul>
-                    </div> 
-                    <hr class="hr-solid">
-                </div>
-                
-                <a href="">FAQ</a>
+                <div id="menu_v" class="menu_v">
+					<ul style="margin: 0;">
+						<li class="border-bottom" style="padding-top: 5px;"><a href="#"><span>Home</span></a></li>
+						<li class="border-bottom">
+                            <a href="#">
+                                <span>About VOF</span>
+                            </a>
+							<ul class="a" style="display:none; background-color: #fff; ">
+                                <!--<li ><a href="01_about01.htm"><span>센터소개</span></a></li>-->
+                                <li><a href="01_about02.htm"><span>이용안내</span></a></li>
+                                <li><a href="01_about03.htm"><span>위치안내</span></a></li>
+                            </ul>
+						</li>
+						<li class="border-bottom" class="active">
+                            <a href="#"><span>Service</span></a>
+							<ul  class="a" style="display: block;  background-color: #fff; ">
+							    <li><a href="02_service01.htm"><span>사무실</span></a></li>
+                                <li><a href="02_service02.htm"><span>비상주 서비스</span></a></li>
+                                <li><a href="02_service03.htm"><span>전문비서</span></a></li>
+                                <!-- <li ><a href="02_service04.htm"><span>영어회화</span></a></li>
+                                <li ><a href="02_service05.htm"><span>중국어회화</span></a></li>-->
+                                <li><a href="02_service06.htm"><span>광고대행</span></a></li>
+                                <!--<li ><a href="02_service07.htm"><span>재능마켓 판매</span></a></li>-->
+                                <li><a href="02_service08.htm"><span>회의실</span></a></li>
+                                <li><a href="02_service09.htm"><span>세무/법무</span></a></li>
+							</ul>
+						</li>
+						<li class="border-bottom" ><a href="#"><span>Office Preview</span></a>
+							<ul class="a" style="display:none; background-color: #fff;  ">
+							    <li><a href="OfficePreview.htm?bcode=1"><span>1인실</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=3"><span>2인실</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=4"><span>3인실</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=5"><span>6인실</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=6"><span>복도</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=7"><span>카페</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=8"><span>회의실</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=9"><span>리셉션</span></a></li>
+                                <li><a href="OfficePreview.htm?bcode=14"><span>창고</span></a></li>
+ 							</ul>
+						</li>
+						<li  class="border-bottom" style="border: none;"><a href="#"><span>FAQ</span></a></li>
+					</ul>
+				</div>
             </div>
+            
+
+            <script>
+
+				jQuery(function($){	
+					// Side Menu
+					var menu_v = $('div.menu_v');
+					var sItem = menu_v.find('>ul>li');
+					var ssItem = menu_v.find('>ul>li>ul>li');
+					var lastEvent = null;
+					
+					sItem.find('>ul').css('display','none');
+					menu_v.find('>ul>li>ul>li[class=active]').parents('li').attr('class','active');
+					menu_v.find('>ul>li[class=active]').find('>ul').css('display','block');
+
+					function menu_vToggle(event){
+						var t = $(this);
+						
+						if (this == lastEvent) return false;
+						lastEvent = this;
+						setTimeout(function(){ lastEvent=null }, 200);
+						
+						if (t.next('ul').is(':hidden')) {
+							sItem.find('>ul').slideUp(109);
+							t.next('ul').slideDown(109);
+						} else if(!t.next('ul').length) {
+							sItem.find('>ul').slideUp(109);
+						} else {
+							t.next('ul').slideUp(109);
+						}
+						
+						if (t.parent('li').hasClass('active')){
+							t.parent('li').removeClass('active');
+						} else {
+							sItem.removeClass('active');
+							t.parent('li').addClass('active');
+						}
+					}
+					sItem.find('>a').click(menu_vToggle).focus(menu_vToggle);
+					
+					function subMenuActive(){
+						ssItem.removeClass('active');
+						$(this).parent(ssItem).addClass('active');
+					}; 
+					ssItem.find('>a').click(subMenuActive).focus(subMenuActive);	
+					//icon
+					menu_v.find('>ul>li>ul').prev('a').append('<span class="i"></span>');
+				});
+			
+            </script>
            
             <div class="Customer">
                 <div class="cus"> 
@@ -138,9 +189,9 @@
                                     <input type="radio" name="slide1" id="slide04">
             
                                     <ul id="imgholder" class="imgs">
+                                        <li class="slideitem1"><img src="img/vof1_1.jpg"></li>
+                                        <li class="slideitem1"><img src="img/vof1_2.jpg"></li>
                                         <li class="slideitem1"><img src="img/vof1_3.jpg"></li>
-                                        <li class="slideitem1"><img src="img/vof4_2.jpg"></li>
-                                        <li class="slideitem1"><img src="img/vof2_4.jpg"></li>
                                         <li class="slideitem1"><img src="img/vof1_4.jpg"></li>
             
                                         <div class="bullets">
@@ -158,18 +209,21 @@
                                     <input type="radio" name="slide2" id="slide06">
                                     <input type="radio" name="slide2" id="slide07">
                                     <input type="radio" name="slide2" id="slide08">
+                                    <input type="radio" name="slide2" id="slide008">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li class="slideitem2"><img src="img/vof1_3.jpg"></li>
-                                        <li class="slideitem2"><img src="img/vof4_2.jpg"></li>
-                                        <li class="slideitem2"><img src="img/vof2_4.jpg"></li>
-                                        <li class="slideitem2"><img src="img/vof1_4.jpg"></li>
-             
+                                        <li class="slideitem2"><img src="img/vof3_1.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof3_2.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof3_3.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof3_4.jpg"></li>
+                                        <li class="slideitem2"><img src="img/vof3_5.jpg"></li>
+
                                         <div class="bullets lab">
                                             <label for="slide05">&nbsp;</label>
                                             <label for="slide06">&nbsp;</label>
                                             <label for="slide07">&nbsp;</label>
                                             <label for="slide08">&nbsp;</label>
+                                            <label for="slide008">&nbsp;</label>
                                         </div>
                                     </ul>
                                 </div>
@@ -183,10 +237,10 @@
                                     <input type="radio" name="slide3" id="slide12">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li class="slideitem3"><img src="img/vof1_3.jpg"></li>
-                                        <li class="slideitem3"><img src="img/vof4_2.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof2_1.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof2_2.jpg"></li>
+                                        <li class="slideitem3"><img src="img/vof2_3.jpg"></li>
                                         <li class="slideitem3"><img src="img/vof2_4.jpg"></li>
-                                        <li class="slideitem3"><img src="img/vof1_4.jpg"></li>
             
                                         <div class="bullets">
                                             <label for="slide09">&nbsp;</label>
@@ -205,10 +259,10 @@
                                     <input type="radio" name="slide4" id="slide16">
             
                                     <ul id="imgholder" class="imgs">
-                                        <li class="slideitem4"><img src="img/vof1_3.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof4_1.jpg"></li>
                                         <li class="slideitem4"><img src="img/vof4_2.jpg"></li>
-                                        <li class="slideitem4"><img src="img/vof2_4.jpg"></li>
-                                        <li class="slideitem4"><img src="img/vof1_4.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof4_3.jpg"></li>
+                                        <li class="slideitem4"><img src="img/vof4_4.jpg"></li>
             
                                         <div class="bullets lab">
                                             <label for="slide13">&nbsp;</label>
@@ -283,11 +337,11 @@
         <div class="menu2">
             <div class="bord">
                 <div class="board">   
-                    <div style="border-bottom:1px dotted; " class="bod">
+                    <div style="border-bottom: solid 0.5px; margin-right: 10px;" class="bod">
                         <h4>VOF 공지사항 </h4>
                         <a href="#"><img class="plus" src="img/mi_more1.gif" alt="#"></a>
                     </div>
-                    <div style="border-bottom:1px dotted; padding:5px;  " class="icn ">
+                    <div style="border-bottom:1px dotted; padding:5px; margin-right: 10px;  " class="icn ">
                         <li >창고서비스 오픈!!</li>
                         <img style="width: 10px ;height: 10px;"  src="/img/icn_new.gif" alt="">
                     </div>
@@ -300,94 +354,51 @@
                 <div class="map">
                     <div id="daumRoughmapContainer1678243325420" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                 </div> 
-                
+                <img src="/img/mibn_map.gif" alt="">   
             </div>
             
 
             <div>
-
-
                 <div class="section">
-                    <div class="tour">
+                <div>
+                    <div class="officeh3">
                         <h3>Office Tour</h3>
-
-                        <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
-                        <input type="radio" name="slide" id="slide4">
-                        <input type="radio" name="slide" id="slide5">   
-                        <input type="radio" name="slide" id="slide6">
-                        <input type="radio" name="slide" id="slide7">
                     </div>
-                    <ul class="officeitem" style="white-space: nowrap;">
-                        <li class="officelist">
-                            <div>
-                                <label for="slide7"><img style="width:30px; height: 40px;" src="img/arrow_left.gif" alt=""></label>
-                                <a><img src="img/1563808557_0.jpg" alt=""></a>
-                                <a><img src="img/1563764894_0.jpg" alt=""></a>
-                                <a><img src="img/1531539569_0.jpg" alt=""></a>
-                                <a><img src="img/1563808835_0.jpg" alt=""></a>
-                                <a><img src="img/1563764756_0.jpg" alt=""></a>
-                                <a><img src="img/1563808819_0.jpg" alt=""></a>
-                                <a><img src="img/1431337963_0.jpg" alt=""></a>
-                                <label for="slide1"><img style="width:30px; height: 40px;"src="img/arrow_right.gif" alt=""></label>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="owl-carousel">
+                        <label for="radio"><img style="width: 20px; height: 30px;" src="/img/arrow_left.gif" alt=""></label>
+                        <div class="b"><img style="width: 109px; " src="./img/1431337963_0.jpg"></div>
+                        <div class="b"><img style="width: 109px; " src="./img/1531539569_0.jpg"></div>
+                        <div class="b"><img style="width: 109px; " src="./img/1563764756_0.jpg"></div>
+                        <div class="b"><img style="width: 109px; " src="./img/1563764894_0.jpg"></div>
+                        <div class="b"><img style="width: 109px; " src="./img/1563808557_0.jpg"></div>
+                        <label for="radio"><img style="width: 20px; height: 30px;" src="/img/arrow_right.gif" alt=""></label>
+                    </div>
                 </div>
 
-                
-
-                
-                        
-                        <!-- <li>
-                            <a>
-                                <img src="img/1563808557_0.jpg" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a>
-                                <img src="img/1563764894_0.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="img/1531539569_0.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="img/1563808835_0.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="img/1563764756_0.jpg" alt="">
-                            </a>
-                        </li>
-
-                        
-                        <li>
-                            <a>
-                                <img src="img/1563808819_0.jpg" alt="">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a>
-                                <img src="img/1431337963_0.jpg" alt="">
-                            </a>
-                        </li> -->
-
-                        
-
-<!-- 
-                        <label for="slide1"><img src="img/arrow_right.gif" alt=""></label> -->
-                    </ul>
+                    <script>
+                        $(document).ready(function(){
+                            $(".owl-carousel").owlCarousel({
+                                items: 3,
+                                margin: 10,
+                                loop: true,
+                                autoplay: true,
+                                autoplayTimeout: 2000,
+                                responsive:{
+                                    0:{
+                                        items:1
+                                    },
+                                    600:{
+                                        items:3
+                                    },
+                                    1090:{
+                                        items:5
+                                    }
+                                }
+                            });
+                        });
+                    </script>
 
                 </div>
-                
             </div>
         </div>
         <div class="ball">
@@ -395,9 +406,8 @@
                 <img src="img/chattingBut.png" alt="">
             </a>
         </div>
-    
-
     </section>
+
     <footer>
         <div class="fot">1</div>
 
@@ -414,19 +424,9 @@
                 </p>
             </div>
         </div>
-
     </footer>
 
+    <script src="script.js"></script>
 
-    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-    <script charset="UTF-8">
-        new daum.roughmap.Lander({
-            "timestamp" : "1678243325420",
-            "key" : "2dyiv",
-            "mapWidth" : "219",
-            "mapHeight" : "185"
-        }).render();
-    </script>
 </body>
 </html>
